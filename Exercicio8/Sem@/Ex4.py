@@ -4,4 +4,25 @@
 # (0,30 cents). Crie um objeto café e, a seguir, faça um menuzinho em que o usuário
 # pode fcar indefnidamente escolhendo adicionais: 1 para chocolate, 2 para espuma
 # de leite, 3 para caramelo e 4 para canela. A cada adicional escolhido, decore o objeto
-# café. No fnal, mostre o preço total.
+# café. No final, mostre o preço total.
+
+def palitos_de_chocolate(f):
+    def decorator():
+        return f() + 0.5
+    return decorator
+
+def espuma_de_leite(f):
+    def decorator():
+        return f() + 0.2
+    return decorator
+
+def caramelo(f):
+    def decorator():
+        return f() + 0.1
+    return decorator
+
+def canela(f):
+    def decorator():
+        return f() + 0.3
+def cafe():
+    return 5.0
