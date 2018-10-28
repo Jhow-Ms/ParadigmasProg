@@ -26,3 +26,25 @@ def canela(f):
         return f() + 0.3
 def cafe():
     return 5.0
+def opcoes():
+    return int(
+                input("1 - Adicionar Palitos de chocolate \n" + "2 - Adicionar Espuma de leite \n" +"3 - Adicionar Caramelo \n" +"4 - Adicionar Canela \n" +"0 - Sair \n"
+                )
+            )
+
+tipo = opcoes()
+while (tipo != 0):
+    if tipo == 1:
+        print("Palitos de chocolate no seu café")
+        cafe = palitos_de_chocolate(cafe)
+    if tipo == 2:
+        print("Espuma de leite no seu café!")
+        cafe = espuma_de_leite(cafe)
+    if tipo == 3:
+        print("Caramelo no seu café!")
+        cafe = caramelo(cafe)
+    if tipo == 4:
+        print("Canela no seu café!")
+        cafe = canela(cafe)
+    tipo = opcoes()
+print("Valor Total:", cafe())
