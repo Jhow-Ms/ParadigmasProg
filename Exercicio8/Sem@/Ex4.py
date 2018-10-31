@@ -46,5 +46,6 @@ while (tipo != 0):
     if tipo == 4:
         print("Canela no seu café!")
         cafe = canela(cafe)
+    #print("Valor atualizado: ", cafe())
     tipo = opcoes()
 print("Valor Total:", cafe())

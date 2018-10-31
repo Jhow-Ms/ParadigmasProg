@@ -54,5 +54,6 @@ while (tipo != 0):
         @canela
         def cafe():
             return 5.0
+    #print(f'Valor atualizado: {cafe()}')
     tipo = opcoes()
 print("Valor Total:", cafe())
